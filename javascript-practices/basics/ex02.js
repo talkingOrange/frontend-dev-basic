@@ -38,6 +38,7 @@ var F = function (a) {
 F(20);
 console.log(a, typeof F);
 
+
 var o = new F(10);
 console.log(o.a, typeof o);
 
