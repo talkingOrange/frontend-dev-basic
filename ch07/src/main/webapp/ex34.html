@@ -30,10 +30,22 @@ $(document).ready(function(){
         imageElement.attr("alt", info[0]);
         imageElement.attr("title", info[0]);
     }
+    
+    var setSlideshow = function() {
+		 // 2초, 이미지 변경
+		 setInterval(changeImage, 2000);
+	}
+
 
     $("button#btn-change").click(function(){
         changeImage();
     });
+    
+    $("button#btn-slideshow").click(function(){
+        setSlideshow();
+    });
+    
+    
 });
 </script>
 </head>
